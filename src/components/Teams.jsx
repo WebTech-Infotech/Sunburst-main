@@ -1,7 +1,7 @@
 import React from "react";
 
 const TeamCard = ({ icon, title, description }) => (
-  <div className="w-[450px] rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-indigo-600 hover:text-white">
+  <div className="w-[450px] bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 ">
     <div className="w-[300px] h-[300px] mb-8">{icon}</div>
     <h3 className="text-3xl font-semibold mb-4">{title}</h3>
     <p className="text-center transition-colors duration-300">{description}</p>
@@ -36,11 +36,11 @@ const Teams = () => {
     },
   ];
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-[#F1C232] py-12">
       <div className="container mx-auto px-4 py-5">
         <h1 className="text-6xl text-center mb-20 font-bold text-gray-800">
-          <span className="text-indigo-600">Our </span>
-          <span className="text-gray-800">Team</span>
+          <span className="text-gray-800">OUR </span>
+          <span className="text-gray-800">TEAM</span>
         </h1>
         <div className="flex justify-evenly w-full">
           {team.map((service, index) => (

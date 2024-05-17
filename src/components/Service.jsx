@@ -7,12 +7,10 @@ import video from "../assets/video-production.svg";
 import web from "../assets/web-design.svg";
 
 const ServiceCard = ({ icon, title, description }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-indigo-600 hover:text-white">
+  <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 ">
     <div className="w-48 h-48 mb-4">{icon}</div>
     <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600 text-center transition-colors duration-300 hover:text-white">
-      {description}
-    </p>
+    <p className=" text-center transition-colors">{description}</p>
   </div>
 );
 
@@ -89,11 +87,11 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-indigo-600 py-12">
       <div className="container mx-auto px-4 py-5">
         <h1 className="text-6xl text-center mb-4 font-bold text-gray-800">
-          <span className="text-indigo-600">Our </span>
-          <span className="text-gray-800">Services</span>
+          <span className="text-white">OUR </span>
+          <span className="text-white">SERVICES</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
           {services.map((service, index) => (

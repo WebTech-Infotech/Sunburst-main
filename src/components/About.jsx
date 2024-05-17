@@ -1,36 +1,84 @@
-import React from "react";
-import home from "../assets/home.svg";
+import React, { useState, useEffect } from "react";
+import about from "../assets/about.svg";
 
-const About = () => {
+const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      title: (
+        <>
+          <span className="text-black">ABOUT </span>
+          <span className="text-black">US</span>
+        </>
+      ),
+      content: (
+        <p className="sm:text-xl text-black font-semibold">
+          <span className="text-4xl text-black">A</span>re you feeling stuck
+          with outdated IT solutions that just aren't propelling your business
+          forward? Ready to embrace innovation and uncover fresh opportunities
+          for your company? Look no further. WebTech Infotech is your
+          cutting-edge IT consulting partner, seamlessly blending AI technology
+          with human expertise to deliver exceptional services. We recognize
+          that each business has its own distinct objectives and requirements —
+          and we excel in catering to them. Our AI-driven solutions are
+          meticulously crafted to elevate your company, while our team of
+          seasoned professionals provides invaluable insights to ensure your IT
+          strategies resonate effectively.
+        </p>
+      ),
+    },
+    {
+      title: (
+        <>
+          <span className="text-black">WHY </span>
+          <span className="text-black">CHOOSE US</span>
+        </>
+      ),
+      content: (
+        <p className="sm:text-xl text-black font-semibold">
+          <span className="text-4xl text-black">A</span>t WebTech Infotech, we
+          pride ourselves on our unwavering commitment to excellence and
+          innovation. Our team of seasoned professionals combines extensive
+          industry experience with cutting-edge AI technology, ensuring that our
+          solutions are not only effective but also future-proof. We understand
+          that every business is unique, which is why we take a personalized
+          approach, tailoring our services to meet your specific needs and
+          objectives.
+        </p>
+      ),
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
-    <div className="w-full h-full bg-gray-100 py-8">
-      <h1 className="sm:text-6xl font-bold text-gray-800 text-center">
-        <span className="text-indigo-600">About </span>
-        <span className="text-gray-800">Us</span>
-      </h1>
-      <div className="container mx-auto flex justify-between items-center px-4">
+    <div className="bg-[#F1C232] py-8 w-full h-screen">
+      <div className="flex items-center mb-8 w-full justify-center">
+        <h1 className="sm:text-6xl font-bold text-white text-center mt-16 justify-right">
+          {slides[currentSlide].title}
+        </h1>
+      </div>
+      <div className="flex justify-between items-center">
         <div className="flex w-full">
           <img
-            src={home}
-            className={`w-full h-[400px] mx-auto transition-opacity duration-500`}
-            alt="home"
+            src={about}
+            className="w-full h-[400px] mx-auto transition-opacity duration-500"
+            alt="about"
           />
         </div>
-        <div className="p-10 w-full">
-          <h1 className="sm:text-2xl font-semibold text-gray-800">
-            Are you tired of the same old marketing strategies that just don’t
-            seem to be taking your brand where you want it to go? Do you want to
-            explore new possibilities and unlock untapped potential for your
-            brand? Look no further. Pink Lemonade is your new-age branding and
-            digital marketing agency that combines the power of AI and human
-            intelligence to provide world-class services. Every brand has unique
-            goals and needs — we understand this well. Our AI-powered services
-            are specifically designed to amplify your brand, while our team of
-            experts provides human insights to ensure your message hits home.
-          </h1>
-        </div>
+        <div className="p-10 w-full">{slides[currentSlide].content}</div>
       </div>
     </div>
   );
 };
-export default About;
+
+export default Carousel;
