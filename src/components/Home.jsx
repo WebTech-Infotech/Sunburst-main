@@ -15,8 +15,9 @@ const App = () => {
           INNOVATIVE IT SOLUTIONS, POWERED BY EXPERTISE
         </h1>
         <p className="text-lg mb-8">
-          We're WebTech InfoTech, a leading IT consulting and servicing company,
-          providing cutting-edge solutions to drive your business forward.
+          We're Sunburst Infotech Consultancy, a leading IT consulting and
+          servicing company, providing cutting-edge solutions to drive your
+          business forward.
         </p>
         <button className="bg-yellow-500 hover:bg-yellow-600  text-white font-bold py-2 px-4 rounded">
           Get in Touch

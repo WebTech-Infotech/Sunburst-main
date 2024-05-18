@@ -2,6 +2,5 @@
 body{
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  scrollbar-color: red yellow;
 }
-
-

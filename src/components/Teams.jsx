@@ -1,4 +1,5 @@
 import React from "react";
+import Sukanya from "../assets/Sukanya.jpg";
 
 const TeamCard = ({ icon, title, description }) => (
   <div className="w-[450px] bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 ">
@@ -25,22 +26,22 @@ const Teams = () => {
     {
       icon: (
         <img
-          src="https://i.ibb.co/ZSDfYTr/Screenshot-2023-11-03-204711.png"
+          src={Sukanya}
           alt="Sukanya"
-          className="w-full h-full object-fit rounded-xl"
+          className="w-full h-full object-cover rounded-xl"
         />
       ),
-      title: "Cutiee Mondal",
+      title: "Sukanya Mondal",
       description:
-        "With a keen eye for design and a passion for creativity, Sukanya brings brands to life through his expertise in crafting visually striking and memorable brand identities. She understands the importance of connecting with the audience on a deeper level and strives to create designs that leave a lasting impression",
+        "With a keen eye for design and a passion for creativity, Sukanya brings brands to life through her expertise in crafting visually striking and memorable brand identities. She understands the importance of connecting with the audience on a deeper level and strives to create designs that leave a lasting impression",
     },
   ];
   return (
     <div className="bg-[#F1C232] py-12">
       <div className="container mx-auto px-4 py-5">
         <h1 className="text-6xl text-center mb-20 font-bold text-gray-800">
-          <span className="text-gray-800">OUR </span>
-          <span className="text-gray-800">TEAM</span>
+          <span className="text-black">OUR </span>
+          <span className="text-black">TEAM</span>
         </h1>
         <div className="flex justify-evenly w-full">
           {team.map((service, index) => (
