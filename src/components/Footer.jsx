@@ -7,19 +7,14 @@ const Footer = () => {
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
           <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <a
-              href="https://pagedone.io/"
-              class="flex justify-center lg:justify-start"
-            ></a>
-            <img src={logo} alt="logo" className="w-36 h-28" />
+            <a href="/" class=" text-gray-600 hover:text-gray-900">
+              <img src={logo} alt="logo" className="w-36 h-28" />
+            </a>
             <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
               Trusted in more than 100 countries & 5 million customers. Have any
               query ?
             </p>
-            <a
-              href="javascript:;"
-              class="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0"
-            >
+            <a href="/" class=" text-gray-600 hover:text-gray-900">
               Contact us
             </a>
           </div>
@@ -30,34 +25,22 @@ const Footer = () => {
             </h4>
             <ul class="text-sm  transition-all duration-500">
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class="text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Home
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   About
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Pricing
                 </a>
               </li>
               <li>
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Features
                 </a>
               </li>
@@ -68,34 +51,22 @@ const Footer = () => {
             <h4 class="text-lg text-gray-900 font-medium mb-7">Products</h4>
             <ul class="text-sm  transition-all duration-500">
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class="text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Figma UI System
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Icons Assets
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Responsive Blocks
                 </a>
               </li>
               <li>
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Components Library
                 </a>
               </li>
@@ -106,34 +77,22 @@ const Footer = () => {
             <h4 class="text-lg text-gray-900 font-medium mb-7">Resources</h4>
             <ul class="text-sm  transition-all duration-500">
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class="text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class="text-gray-600 hover:text-gray-900">
                   FAQs
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Quick Start
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Documentation
                 </a>
               </li>
               <li>
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   User Guide
                 </a>
               </li>
@@ -144,34 +103,22 @@ const Footer = () => {
             <h4 class="text-lg text-gray-900 font-medium mb-7">Blogs</h4>
             <ul class="text-sm  transition-all duration-500">
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class="text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class="text-gray-600 hover:text-gray-900">
                   News
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Tips & Tricks
                 </a>
               </li>
               <li class="mb-6">
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   New Updates
                 </a>
               </li>
               <li>
-                <a
-                  href="javascript:;"
-                  class=" text-gray-600 hover:text-gray-900"
-                >
+                <a href="/" class=" text-gray-600 hover:text-gray-900">
                   Events
                 </a>
               </li>
@@ -187,7 +134,7 @@ const Footer = () => {
             </span>
             <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
               <a
-                href="javascript:;"
+                href="/"
                 class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600"
               >
                 <svg
@@ -207,7 +154,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="javascript:;"
+                href="/"
                 class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600"
               >
                 <svg
@@ -223,7 +170,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="javascript:;"
+                href="/"
                 class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600"
               >
                 <svg
@@ -239,7 +186,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="javascript:;"
+                href="/"
                 class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600"
               >
                 <svg
