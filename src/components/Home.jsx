@@ -11,10 +11,10 @@ const App = () => {
       />
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-screen text-white">
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="sm:text-4xl text-lg font-bold mb-4 text-center">
           INNOVATIVE IT SOLUTIONS, POWERED BY EXPERTISE
         </h1>
-        <p className="text-lg mb-8">
+        <p className="sm:text-lg text-sm text-center mb-8">
           We're Sunburst Infotech Consultancy, a leading IT consulting and
           servicing company, providing cutting-edge solutions to drive your
           business forward.

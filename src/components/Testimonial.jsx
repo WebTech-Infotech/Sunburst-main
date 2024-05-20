@@ -92,11 +92,14 @@ const Testimonial = () => {
   return (
     <section className="bg-indigo-600 py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-6xl text-center mb-10 font-bold text-gray-800">
+        <h1 className="text-4xl md:text-6xl text-center mb-10 font-bold text-gray-800">
           <span className="text-white">What Our </span>
           <span className="text-white">Client Says</span>
         </h1>
-        <div className="relative overflow-hidden rounded-lg" ref={containerRef}>
+        <div
+          className="relative overflow-hidden rounded-lg md:rounded-xl"
+          ref={containerRef}
+        >
           <div
             className="flex transition-transform duration-500"
             style={{
@@ -109,7 +112,7 @@ const Testimonial = () => {
               (testimonial, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-1/3 bg-white p-6 mx-6 rounded-xl"
+                  className="flex-shrink-0 w-full md:w-1/3 bg-white p-4 md:p-6 mx-2 md:mx-6 rounded-lg md:rounded-xl"
                 >
                   <blockquote>
                     <p className="text-gray-700 mb-4">{testimonial.quote}</p>
@@ -118,13 +121,15 @@ const Testimonial = () => {
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover mr-4"
+                      className="w-8 h-8 md:w-12 md:h-12 rounded-full object-cover mr-4"
                     />
                     <div>
-                      <h3 className="text-lg font-semibold">
+                      <h3 className="text-base md:text-lg font-semibold">
                         {testimonial.name}
                       </h3>
-                      <p className="text-gray-600">{testimonial.title}</p>
+                      <p className="text-sm md:text-base text-gray-600">
+                        {testimonial.title}
+                      </p>
                     </div>
                   </div>
                 </div>
