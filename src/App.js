@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import CustomerSupport from './components/CustomerSupport';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      <CustomerSupport />
       <Testimonial />
       <Footer />
     </>

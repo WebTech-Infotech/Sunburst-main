@@ -91,7 +91,7 @@ const Testimonial = () => {
 
   return (
     <section className="bg-indigo-600 py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mt-20">
         <h1 className="text-4xl md:text-6xl text-center mb-10 font-bold text-gray-800">
           <span className="text-white">What Our </span>
           <span className="text-white">Client Says</span>
