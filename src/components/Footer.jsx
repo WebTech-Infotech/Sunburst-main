@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/black logo.jpg";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
           <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <a href="/" class=" text-gray-600 hover:text-gray-900">
-              <img src={logo} alt="logo" className="w-36 h-28" />
+              <img src={logo} alt="logo" className="w-[200px] h-[150px]" />
             </a>
             <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
               Trusted in more than 100 countries & 5 million customers. Have any

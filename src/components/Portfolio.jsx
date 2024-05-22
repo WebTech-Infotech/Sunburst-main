@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Fitnezz from "../assets/Projects/Fitnezz.png";
 import Snapsmart from "../assets/Projects/SnapSmart.png";
-import One24 from "../assets/Projects/One24.png";
+import Celsius from "../assets/Projects/Celsius.png";
 
 const projectData = [
   {
@@ -28,11 +28,10 @@ const projectData = [
   },
   {
     id: 3,
-    title: "One24 Digital",
-    description:
-      "Let's redefine your digital destiny.Break the Mold, dominate the market. Turning clicks into loyal fans",
-    image: One24,
-    link: "https://one24digital.com/",
+    title: "Celsius",
+    description: "Annual Fest Website for CIEM College",
+    image: Celsius,
+    link: "https://www.ciemcelsius.com/",
   },
 ];
 
@@ -63,7 +62,7 @@ const ProjectCard = ({ project }) => {
 
 const Portfolio = () => {
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-12" id="projects">
       <div className="container mx-auto px-4 py-5">
         <h1 className="text-6xl text-center mb-4 font-bold text-gray-800">
           <span className="text-indigo-600">OUR </span>
